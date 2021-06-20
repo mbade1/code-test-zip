@@ -13,6 +13,10 @@ Commit #2: 4:40
 - Rebuilt FE validations (RegEx; Challenge Pt. 2)
 - DOM shows location details (Challenge Pt. 3)
 
+Commit #3: 6:00
+
+- Stylized and further DOM manipulation added. Final push for review
+
 ## Challenge
 
 - User input of Zip Code
@@ -58,4 +62,4 @@ Commit #2: 4:40
 
 ### Stylize it
 
-- Once all location details are added to the DOM, add CSS Styling to make it look good.
+- Once all location details are added to the DOM, add CSS Styling to make it look good. **DONE**

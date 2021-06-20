@@ -1,5 +1,25 @@
-p {
-  margin-bottom: 10px;
+/* Color palette */
+:root {
+  --peach: #f8b195;
+  --pink: #f67280;
+  --dark-pink: #c06c84;
+  --purple: #6c5b7b;
+  --dark-blue: #355c7d;
+}
+
+html {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background: var(--peach);
+  background: linear-gradient(
+    180deg,
+    var(--peach),
+    var(--pink),
+    var(--dark-pink),
+    var(--purple),
+    var(--dark-blue)
+  );
+  height: 100%;
+  font-weight: 550;
 }
 
 .wrapper {
@@ -11,16 +31,36 @@ p {
 
 .title {
   font-size: 2em;
+  font-weight: 800;
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .zip-input,
 .zip-display {
   width: 600px;
-  height: 300px;
-  border: 2px solid blue;
-  background-color: rgb(177, 177, 250);
+  height: auto;
   margin-bottom: 25px;
   text-align: center;
+  border-radius: 4px;
+}
+
+.zip-input {
+  background-color: var(--peach);
+  border: 2px solid var(--dark-blue);
+}
+
+.instructions {
+  margin: 20px 0px;
+}
+
+.instructions p {
+  margin-bottom: 10px;
+}
+
+.zip-input div {
+  margin-top: 10px;
 }
 
 .zip-input p {
@@ -31,15 +71,26 @@ p {
   padding: 20px;
 }
 
-.zip-display {
-  border: 2px solid red;
-  background-color: rgb(250, 170, 170);
-  justify-content: center;
-  text-align: center;
-  display: flex;
+#zip {
+  padding: 10px;
 }
 
-.instructions {
+.submit {
+  padding: 10px;
+  background-color: var(--dark-blue);
+  border-radius: 2px;
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.zip-display {
+  display: none;
+  background-color: var(--peach);
+  border: 2px solid var(--dark-blue);
+  background-color: none;
+  justify-content: center;
+  text-align: center;
 }
 
 .location-information {
@@ -47,20 +98,108 @@ p {
   padding: 20px;
 }
 
+.location-information p {
+  margin-bottom: 10px;
+}
+
 .state-image {
-  border: 2px solid red;
   padding: 20px;
   margin-bottom: 5px;
+  border-radius: 2px;
 }
 
 .location-name {
   font-size: 1.5em;
 }
 
-.latitude {
-  float: left;
+.latitude,
+.longitude {
+  display: inline;
+  width: 45%;
+  margin-bottom: 10px;
 }
 
-.longitude {
-  float: right;
+.requested-zip {
+  margin-top: 10px;
+}
+
+.further-instructions {
+  display: none;
+}
+
+/* Animations */
+
+.fade-in {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media query for phone screens */
+
+@media screen and (max-width: 600px) {
+  .title {
+    padding: 10px;
+  }
+  .zip-input,
+  .zip-display {
+    width: 75%;
+    height: 75%;
+  }
+
+  #zip {
+    width: 50%;
+  }
+
+  .latitude,
+  .longitude {
+    width: 100%;
+  }
 }

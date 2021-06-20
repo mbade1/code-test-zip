@@ -13,29 +13,34 @@
 			<p>Welcome to the US Zippopotamus JS app!</p> 
 		</div>
 		<div class="zip-input">
-			<p>
+			<div class="instructions">
+				To get started, simply input a US Zip Code 
+				<p>(ex: 90210 for Beverly Hills) </p>
+				in the Zip form above and click Submit!
+			</div>
+			<div>
 				Where would you like to go?
-			</p>
+			</div>
 			<div class="zip-form">
 				<form>
 					<label for="zip">Zip:</label>
-					<input type="text" id="zip" name="zip" placeholder="Ex: '90210' for Beverly Hills"><br><br>
+					<input type="text" id="zip" name="zip" placeholder="90210"><br><br>
 					<input class="submit" type="submit" value="Submit" onClick="zipSubmit(event)">
 				  </form> 
 			</div>
 		</div>
 
 		<div class="zip-display">
-			<div class="instructions">
-				Welcome to the Zippopotamus vanilla JS-based app! To get started, simply input a US Zip Code (ex: 90210 for Beverly Hills) in the Zip form above and click Submit!
-			</div>
-		
 			<div class="location-information">
-				<img src="states/CA.svg" class="state-image"/>
-				<p class="location-name">Beverly Hills, California (CA), United States (US)</p>
-				<p class="latitude">Latitude: <span class="latitude-number">34.0901</span></p>
-				<p class="longitude">Longitude: <span class="longitude-number">-118.40654</span></p>
+				<img src="" class="state-image"/>
+				<p class="location-name"></p>
+				<p class="latitude"></p>
+				<p class="longitude"></p>
+				<p class="requested-zip"></p>
 			</div>
+			<p class="further-instructions">
+				Enter another Zip code to learn more!
+			</p>
 		</div>
 	</div>
 	
