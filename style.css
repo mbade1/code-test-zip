@@ -40,10 +40,10 @@ p {
 }
 
 .instructions {
-  display: none;
 }
 
 .location-information {
+  display: none;
   padding: 20px;
 }
 

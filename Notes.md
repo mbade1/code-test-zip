@@ -4,9 +4,14 @@ Start: 2:00 PM on 6/20/2021
 
 Commit #1: 3:15
 
-- User Input Form built (Req 1)
-- Front end validators built and can fetch (Req 2)
+- User Input Form built (Challenge Pt. 1)
+- Front end validators built and can fetch (Challenge Pt. 2)
 - Sample static data built
+
+Commit #2: 4:40
+
+- Rebuilt FE validations (RegEx; Challenge Pt. 2)
+- DOM shows location details (Challenge Pt. 3)
 
 ## Challenge
 
@@ -39,7 +44,7 @@ Commit #1: 3:15
 
 ### FETCH TO ZIPPO API
 
-- Example:
+- Example: **DONE**
   - fetch("http://api.zippopotam.us/us/78666")
     .then((response) => response.json())
     .then((data) => console.log(data))
@@ -48,5 +53,9 @@ Commit #1: 3:15
 
 ### Display the location details
 
-- Have a parent div with all JSON data. When the page is initially loaded, it will have instructions for the User on how to use the Zippo fetcher.
-- After user starts the fetch (aka inputs a Zip and clicks the 'submit' button) this div's instructional text disappears and is replaced with the stylized data.
+- Have a parent div with all JSON data. When the page is initially loaded, it will have instructions for the User on how to use the Zippo fetcher. **DONE**
+- After user starts the fetch (aka inputs a Zip and clicks the 'submit' button) this div's instructional text disappears and is replaced with the stylized data. **DONE**
+
+### Stylize it
+
+- Once all location details are added to the DOM, add CSS Styling to make it look good.

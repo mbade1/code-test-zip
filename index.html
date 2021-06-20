@@ -10,31 +10,31 @@
 <body>
 	<div class="wrapper">
 		<div class="title">
-			<p>Welcome to the Zippopotamus JS app!</p> 
+			<p>Welcome to the US Zippopotamus JS app!</p> 
 		</div>
 		<div class="zip-input">
 			<p>
 				Where would you like to go?
 			</p>
 			<div class="zip-form">
-				<form onSubmit="zipSubmit()">
+				<form>
 					<label for="zip">Zip:</label>
 					<input type="text" id="zip" name="zip" placeholder="Ex: '90210' for Beverly Hills"><br><br>
-					<input type="submit" value="Submit">
+					<input class="submit" type="submit" value="Submit" onClick="zipSubmit(event)">
 				  </form> 
 			</div>
 		</div>
 
 		<div class="zip-display">
 			<div class="instructions">
-				Welcome to the Zippopotamus vanilla JS-based app! To get started, simply input a Zip Code (ex: 90210 for Beverly Hills) in the Zip form above and click Submit!
+				Welcome to the Zippopotamus vanilla JS-based app! To get started, simply input a US Zip Code (ex: 90210 for Beverly Hills) in the Zip form above and click Submit!
 			</div>
 		
 			<div class="location-information">
 				<img src="states/CA.svg" class="state-image"/>
 				<p class="location-name">Beverly Hills, California (CA), United States (US)</p>
-				<p class="latitude">Latitude: 34.0901 </p>
-				<p class="longitude">Longitude: -118.40654</p>
+				<p class="latitude">Latitude: <span class="latitude-number">34.0901</span></p>
+				<p class="longitude">Longitude: <span class="longitude-number">-118.40654</span></p>
 			</div>
 		</div>
 	</div>
