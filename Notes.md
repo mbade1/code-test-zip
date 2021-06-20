@@ -2,6 +2,12 @@
 
 Start: 2:00 PM on 6/20/2021
 
+Commit #1: 3:15
+
+- User Input Form built (Req 1)
+- Front end validators built and can fetch (Req 2)
+- Sample static data built
+
 ## Challenge
 
 - User input of Zip Code
@@ -20,16 +26,16 @@ Start: 2:00 PM on 6/20/2021
 
 ### Initial Thoughts
 
-- Build out the form submission, and see what data comes back.
-- Create a sample static page based off of the JSON data.
+- Build out the form submission, and see what data comes back. **DONE**
+- Create a sample static page based off of the JSON data. **DONE**
 - Utilize querySelectors and append or insertHTML into those items, with the JSON data.
 - Finish styling and make it look nice.
 
 ### USER INPUT OF ZIP CODE
 
-- Make a form with onClick action.
-- What happens if a user puts in a Zip longer than 5 characters and not numbers?
-  - regex for just numbers and length of 5 validator?
+- Make a form with onSubmit action. **DONE**
+- What happens if a user puts in a Zip longer than 5 characters and not numbers? **Validators set**
+  - regex for just numbers and length of 5 validator? **DONE - no regex but parseInt and length of inputted zip. Other errors caught by API**
 
 ### FETCH TO ZIPPO API
 
@@ -37,8 +43,8 @@ Start: 2:00 PM on 6/20/2021
   - fetch("http://api.zippopotam.us/us/78666")
     .then((response) => response.json())
     .then((data) => console.log(data))
-    .catch((error) => console.log(error))
-- Use the example above to start, but improve it with DOM manipulation for error handling.
+    .catch((error) => console.log(error)) **DONE**
+- Use the example above to start, but improve it with DOM manipulation for error handling. **DONE**
 
 ### Display the location details
 

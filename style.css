@@ -1,0 +1,66 @@
+p {
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.zip-input,
+.zip-display {
+  width: 600px;
+  height: 300px;
+  border: 2px solid blue;
+  background-color: rgb(177, 177, 250);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.zip-input p {
+  margin-top: 10px;
+}
+
+.zip-form {
+  padding: 20px;
+}
+
+.zip-display {
+  border: 2px solid red;
+  background-color: rgb(250, 170, 170);
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.instructions {
+  display: none;
+}
+
+.location-information {
+  padding: 20px;
+}
+
+.state-image {
+  border: 2px solid red;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.location-name {
+  font-size: 1.5em;
+}
+
+.latitude {
+  float: left;
+}
+
+.longitude {
+  float: right;
+}
